@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-language-skills</title>
+</head>
+<body>
+    <script>
+        function myLanguages(results) {
+            let listArr = [];
+            let result = [];
+            
+            for (variable in results) {
+                if (results[variable] > 60 || results[variable] == 60) {
+                    listArr.push(results[variable]);
+                }
+                console.log(' var -- ', results[variable], variable);
+            }
+            console.log('list  -- ', listArr);
+
+            function bubbleSort(arr) {
+                for (var i = 0, endI = arr.length - 1; i < endI; i++) {
+                    for (var j = 0, endJ = endI - i; j < endJ; j++) {
+                        if (arr[j] < arr[j + 1]) {
+                            var swap = arr[j];
+                            arr[j] = arr[j + 1];
+                            arr[j + 1] = swap;
+                        }
+                    }
+                }
+                return arr;
+            }
+
+            let sortedArr = bubbleSort(listArr);
+
+            for (let i = 0; i < sortedArr.length; i++) {
+                for (variable in results) {
+                    if (sortedArr[i] == results[variable]) {
+                        result.push(variable)
+                    }
+                }
+            }
+
+            console.log('sorted -- ', sortedArr);
+            return result;
+        }
+
+        
+
+        console.log('result -- ', myLanguages({"Java": 10, "Ruby": 80, "Python": 65}));
+    </script>
+</body>
+</html>
