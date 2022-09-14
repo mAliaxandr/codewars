@@ -1,0 +1,1 @@
+console.log('which-color-is-the-brightest')
