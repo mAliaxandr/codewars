@@ -1,0 +1,24 @@
+:root {--main-color: red;}
+
+
+body {
+    background-color: yellowgreen ;
+}
+
+.parent {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.chaild {
+    font-size: 200%;
+    border: 5px dotted red;
+    color: var(--main-color);
+    background:rgba(red, green, blue, alpha);
+    margin: 30px;
+    padding: 10px 20px;
+    font-style: none;
+    position: absolute;
+    /* text-decoration: line-through; */
+    /* text-align: right; */
+}
