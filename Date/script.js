@@ -15,11 +15,6 @@
 let v = (!!'0');
 console.log('-res-- ',   0 && '' && []);
 
-if ({}=={}) {
-    console.log(true);
-} else {
-    console.log(false);
-}
 
 
 
